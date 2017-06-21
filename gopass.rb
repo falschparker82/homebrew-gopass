@@ -1,9 +1,9 @@
 class Gopass < Formula
   desc ""
   homepage ""
-  url "https://github.com/justwatchcom/gopass/releases/download/v1.2.0-rc2/gopass-1.2.0-rc2-darwin-amd64.tar.gz"
-  version "1.2.0-rc2"
-  sha256 "82a9adee34256b9b25b598e9a3b2fd36226cfa7f62c536e0ef65faaba36ebd70"
+  url "https://github.com/justwatchcom/gopass/releases/download/v1.2.0-rc3/gopass-1.2.0-rc3-darwin-amd64.tar.gz"
+  version "1.2.0-rc3"
+  sha256 "f2e2099a4f10a0c369702cd09626d21990d1ee65b1ff358ab2c51f7147a3a865"
 
   def install
     bin.install "gopass"
