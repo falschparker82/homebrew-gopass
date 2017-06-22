@@ -1,8 +1,8 @@
 class Gopass < Formula
   desc "The slightly more awesome Standard Unix Password Manager for Teams."
   homepage "https://www.justwatch.com/gopass"
-  url "https://www.justwatch.com/gopass/releases/1.1.1/gopass-1.1.1.tar.gz"
-  sha256 "c05d24777921f947830b3ed3d9590eb1d5efe85a0075e2932f5a5df68e106542"
+  url "https://www.justwatch.com/gopass/releases/1.2.0/gopass-1.2.0.tar.gz"
+  sha256 "17c283bbae9b2d306cfeb8537e0857e733f78f533319f59b7bfe5ba2e22cbf14"
   head "https://github.com/justwatchcom/gopass.git"
 
   revision 1
@@ -53,13 +53,6 @@ class Gopass < Formula
   end
 
   test do
-    # TODO: make this work, is currently stuck
-    #
-    # Gpg.create_test_key(testpath)
-    # system bin/"gopass", "init", "Testing"
-    # system bin/"gopass", "generate", "Email/testing@foo.bar", "15"
-    # assert File.exist?(".password-store/Email/testing@foo.bar.gpg")
-
     assert_match version.to_s, shell_output("#{bin}/gopass version")
   end
 end
