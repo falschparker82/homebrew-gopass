@@ -3,7 +3,7 @@ class Gopass < Formula
   homepage "https://www.gopass.pw/"
   url "https://github.com/dominikschulz/gopass/releases/download/v1.7.3-alpha.0/gopass-1.7.3-alpha.0.tar.gz"
   version "1.7.3-alpha.0"
-  sha256 "2f42b42fe835acd51a0259be5521c66a7fe0a544bfaeb03ef8fffc8a79d2fa6e"
+  sha256 "b1bd3389db0140a73b360dd5107b6330930b9d0d54a9a36e9d7b4b6b7765dc95"
   head "https://github.com/dominikschulz/gopass.git"
   
   depends_on "go" => :build
