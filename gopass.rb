@@ -1,10 +1,10 @@
 class Gopass < Formula
   desc "The slightly more awesome Standard Unix Password Manager for Teams."
-  homepage "https://www.justwatch.com/gopass/"
-  url "https://github.com/justwatchcom/gopass/releases/download/v1.7.2/gopass-1.7.2.tar.gz"
-  version "1.7.2"
-  sha256 "0d0456932ac10864ffd70ece15dc925b04c63af302a4a7d375a8499c62844b7c"
-  head "https://github.com/justwatchcom/gopass.git"
+  homepage "https://www.gopass.pw/"
+  url "https://github.com/dominikschulz/gopass/releases/download/v1.7.3-alpha.0/gopass-1.7.3-alpha.0.tar.gz"
+  version "1.7.3-alpha.0"
+  sha256 "2f42b42fe835acd51a0259be5521c66a7fe0a544bfaeb03ef8fffc8a79d2fa6e"
+  head "https://github.com/dominikschulz/gopass.git"
   
   depends_on "go" => :build
   
@@ -14,9 +14,9 @@ class Gopass < Formula
 
   def install
     ENV["GOPATH"] = buildpath
-    (buildpath/"src/github.com/justwatchcom/gopass").install buildpath.children
+    (buildpath/"src/github.com/gopasspw/gopass").install buildpath.children
     
-    cd "src/github.com/justwatchcom/gopass" do
+    cd "src/github.com/gopasspw/gopass" do
       ENV["PREFIX"] = prefix
       system "make", "install"
     end
@@ -39,8 +39,8 @@ class Gopass < Formula
     please make sure you have autocompletion for homebrew enabled:
       https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion
     More information:
-      https://www.justwatch.com/gopass
-      https://github.com/justwatchcom/gopass/README.md
+      https://www.gopass.pw/
+      https://github.com/gopasspw/gopass/README.md
     
   EOS
   end
