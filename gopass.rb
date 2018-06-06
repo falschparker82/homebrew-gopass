@@ -1,9 +1,9 @@
 class Gopass < Formula
   desc "The slightly more awesome Standard Unix Password Manager for Teams."
   homepage "https://www.gopass.pw/"
-  url "https://github.com/gopasspw/gopass/releases/download/v1.8.0-alpha.1/gopass-1.8.0-alpha.1.tar.gz"
-  version "1.8.0-alpha.1"
-  sha256 "ba345f706d91978c5bd411c5215386fe81e872a2fa73b9f220ffd4a1f9218df7"
+  url "https://github.com/gopasspw/gopass/releases/download/v1.8.0/gopass-1.8.0.tar.gz"
+  version "1.8.0"
+  sha256 "dba0e1d1a10cbaadceee18b84f363bbbf886ba52cd9c658f5eca35d37b2f3f75"
   head "https://github.com/gopasspw/gopass.git"
   
   depends_on "go" => :build
