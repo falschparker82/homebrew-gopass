@@ -5,7 +5,7 @@ This is a private tap maintained by the Gopass team at JustWatch in order to use
 Usage:
 
 ```bash
-brew tap justwatchcom/gopass
+brew tap gopasspw/gopass
 brew install gopass
 ```
 
