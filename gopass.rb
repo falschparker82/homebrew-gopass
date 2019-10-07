@@ -28,7 +28,7 @@ class Gopass < Formula
     
   end
 
-  def caveats; <<-EOS.undent
+  def caveats; <<~EOS.undent
     Gopass has been installed, have fun!
     If upgrading from `pass`, everything should work as expected.
     If installing from scratch, you need to either initialize a new repository now...
