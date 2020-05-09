@@ -2,16 +2,16 @@
 class Gopass < Formula
   desc "The slightly more awesome Standard Unix Password Manager for Teams."
   homepage "https://www.gopass.pw/"
-  version "1.9.0"
+  version "1.9.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gopasspw/gopass/releases/download/v1.9.0/gopass-1.9.0-darwin-amd64.tar.gz"
-    sha256 "d290b8ce6ea4f7e1c4036d6c0c43135c0b1899f2bf4175a627d3ae1a96029c36"
+    url "https://github.com/gopasspw/gopass/releases/download/v1.9.1/gopass-1.9.1-darwin-amd64.tar.gz"
+    sha256 "07131e011b8655de4a194bc2fa957d245fb5aae3bbcb1e166e883a4ed36ed6f7"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gopasspw/gopass/releases/download/v1.9.0/gopass-1.9.0-linux-amd64.tar.gz"
-      sha256 "fd2177bdefa60e5b34aa157bbb0db50af49380566227498f1d965eab34182342"
+      url "https://github.com/gopasspw/gopass/releases/download/v1.9.1/gopass-1.9.1-linux-amd64.tar.gz"
+      sha256 "4a8dfdddc743267b1b2cda84c4b63cfc61a887deb580e2acc0314be1154859fb"
     end
   end
   
