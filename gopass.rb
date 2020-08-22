@@ -2,24 +2,24 @@
 class Gopass < Formula
   desc "The slightly more awesome Standard Unix Password Manager for Teams."
   homepage "https://www.gopass.pw/"
-  version "1.10.0-rc.0"
+  version "1.10.0-rc.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gopasspw/gopass/releases/download/v1.10.0-rc.0/gopass-1.10.0-rc.0-darwin-amd64.tar.gz"
-    sha256 "03d37f8974bf8dc48432c5aa4a4ebe2050fb882e23a9e5436bdf1dffd1fc8357"
+    url "https://github.com/gopasspw/gopass/releases/download/v1.10.0-rc.1/gopass-1.10.0-rc.1-darwin-amd64.tar.gz"
+    sha256 "a1e001faf90f3e78aad942ea50bfe593b76d5e84786f12774ed75a67e914c76a"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gopasspw/gopass/releases/download/v1.10.0-rc.0/gopass-1.10.0-rc.0-linux-amd64.tar.gz"
-      sha256 "6d016c9f8d537473cde516ae5edd7f03291d18c5c9d0c545873520da0438df95"
+      url "https://github.com/gopasspw/gopass/releases/download/v1.10.0-rc.1/gopass-1.10.0-rc.1-linux-amd64.tar.gz"
+      sha256 "8c25e27112819da956ada1675236757d32f07c539b20becc6ba3b75d5af463ba"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gopasspw/gopass/releases/download/v1.10.0-rc.0/gopass-1.10.0-rc.0-linux-arm64.tar.gz"
-        sha256 "3282b7de6cb9e3cc7f74a7950d9c7423fdb6d521cb205cbd5910083238805663"
+        url "https://github.com/gopasspw/gopass/releases/download/v1.10.0-rc.1/gopass-1.10.0-rc.1-linux-arm64.tar.gz"
+        sha256 "8e6e27249e21146a78f836f5a17a80e69df7d49707f9b5025a0b391e12804a99"
       else
-        url "https://github.com/gopasspw/gopass/releases/download/v1.10.0-rc.0/gopass-1.10.0-rc.0-linux-armv6.tar.gz"
-        sha256 "a7b546f802c97f2fbd016ec70ab1548c658a9755fe4abd89bd48f48b94556775"
+        url "https://github.com/gopasspw/gopass/releases/download/v1.10.0-rc.1/gopass-1.10.0-rc.1-linux-armv6.tar.gz"
+        sha256 "7b874d2708d953bd62bb42daa1a742fde977a5deebb2f9e0fea188abf7284706"
       end
     end
   end
