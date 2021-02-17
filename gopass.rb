@@ -5,24 +5,28 @@
 class Gopass < Formula
   desc "The slightly more awesome Standard Unix Password Manager for Teams."
   homepage "https://www.gopass.pw/"
-  version "1.12.0"
+  version "1.12.1"
   bottle :unneeded
 
-  if OS.mac?
-    url "https://github.com/gopasspw/gopass/releases/download/v1.12.0/gopass-1.12.0-darwin-amd64.tar.gz"
-    sha256 "04ec997d5b7b2f533e1d8c5adf0ec8243b71cd6eeba7a9c56a3125a5800757be"
+  if OS.mac? && Hardware::CPU.intel?
+    url "https://github.com/gopasspw/gopass/releases/download/v1.12.1/gopass-1.12.1-darwin-amd64.tar.gz"
+    sha256 "f83341a3bdd37c232146e011771739c4db57b346d88f2150c898f40c15e7818f"
+  end
+  if OS.mac? && Hardware::CPU.arm?
+    url "https://github.com/gopasspw/gopass/releases/download/v1.12.1/gopass-1.12.1-darwin-arm64.tar.gz"
+    sha256 "009004559ea8a4e08dc1d8f4e03f85a6281116656bbc00fdac300cd08aec83fa"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/gopasspw/gopass/releases/download/v1.12.0/gopass-1.12.0-linux-amd64.tar.gz"
-    sha256 "3976c55aa37df3e44743fc0a16bdfef268d82269374e9e8fcbff7c635db927e7"
+    url "https://github.com/gopasspw/gopass/releases/download/v1.12.1/gopass-1.12.1-linux-amd64.tar.gz"
+    sha256 "5da09c563df3b7866354ec8f0b92f71f0a82f601c96574811b794d05a12ff191"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/gopasspw/gopass/releases/download/v1.12.0/gopass-1.12.0-linux-armv6.tar.gz"
-    sha256 "186dfcc36ec88b9162fc3a0cea470d9bda09b7cde2e075df05df67d729c7ccbc"
+    url "https://github.com/gopasspw/gopass/releases/download/v1.12.1/gopass-1.12.1-linux-armv6.tar.gz"
+    sha256 "55ec8f993ddd304ce869ce83ad90e8480e14ea469009c2713af979093374864e"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/gopasspw/gopass/releases/download/v1.12.0/gopass-1.12.0-linux-arm64.tar.gz"
-    sha256 "0f1ff322c0a7ce768bf06d97cc0df42e503c576b6c3627ed0ace2a131d36c2a4"
+    url "https://github.com/gopasspw/gopass/releases/download/v1.12.1/gopass-1.12.1-linux-arm64.tar.gz"
+    sha256 "731dcb2d64786818efa45c9f91863e4a4ffa91f10429603744030cc40e3dc360"
   end
 
   depends_on "git"
